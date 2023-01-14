@@ -1,0 +1,21 @@
+{
+  "name": "impulse-monorepo",
+  "private": true,
+  
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
+    "lint": "turbo run lint",
+    "publish-stable": "turbo run publish-stable",
+    "login": "npm login --scope=@impulse.dev",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "devDependencies": {
+    "prettier": "^2.8.2",
+    "turbo": "^1.7.0"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
